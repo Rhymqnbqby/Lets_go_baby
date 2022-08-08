@@ -1,1 +1,429 @@
+/* предустановки*/
 
+body {
+    margin: 0;
+    border: 2px #9138e4 solid;
+    position: relative;
+}
+
+header {
+    height: 715px;
+    width: 1400px;
+    background-image: url(Pictures/1pic.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFE6E4;
+}
+
+footer {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    border: 2px #094b14 solid; 
+}
+
+nav {
+    border: 2px #2612db solid;
+}
+
+section {
+    border: 2px #e43e38 solid;
+}
+
+
+/* Дальше селекторы по классам */
+
+/* Менюха */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+    border: #ac1998 solid 2px;
+    padding-top: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a {
+    border: #ac1998 solid 2px;
+}
+
+.menu p {
+    border: #45aeeb solid 2px;
+    margin: 0;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    justify-content: start;
+    list-style-type: none;
+    }
+
+.logo {
+    width: 25.34px;
+    height: 25px;
+    border: #ffcd27 solid 2px;
+    margin-left: 98.32px;
+}
+
+/* Интро-секция */
+
+.intro {
+    display: grid;
+    width: 534.02px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 182px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;
+    margin: 0;
+    margin-top: 91px;
+    padding-left: 2.8px;
+}
+
+.intro p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 24px;
+    line-height: 30px;
+    padding-left: 2.8px;
+}
+
+.intro div {
+    display: grid;
+    background-color: #CC8B86;
+    height: 74px;
+    width: 309.14px;
+    margin-top: 21px;
+    text-align: center;
+    }
+
+.intro a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #533738;
+    align-self: center;
+}
+
+/*Секция о нас*/
+
+.aboutus p {
+    margin: 0;
+}
+
+.aboutus h2 {
+    grid-area: h2;
+    margin: 0;
+    padding: 62px 0 40px 632px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    border: #2612db solid 1px;
+}
+
+.aboutus img {
+    grid-area: img;
+    width: 444.54px;
+    height: 465px;
+    margin-left: 182px;
+    margin-bottom: 21px;
+}
+
+.aboutus .aboutus_p1 {
+    grid-area: aboutus_p1;
+    margin-right: 182px;
+    margin-left: 63.46px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    border: #2612db solid 1px;
+}
+
+.aboutus .aboutus_p2 {
+    grid-area: aboutus_p2;
+    margin-right: 182px;
+    margin-left: 63.46px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    border: #2612db solid 1px;
+    padding-bottom: 156px;
+}
+
+.aboutus {
+    display: grid;
+    grid-template-columns: 1br 1br;
+    grid-template-areas: "h2 h2" "img aboutus_p1" "img aboutus_p2" ;
+}
+
+/*Преимущества*/
+
+.advantages {
+    display: grid;
+    align-content: center;
+    background-color: #8D7370;
+    height: 273px;
+}
+
+.advantage-list {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    border: #2612db solid 1px;
+}
+
+li span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    border: #094b14 solid 1px;
+    margin-bottom: 8px;
+}
+
+.advantage-list li {
+    border: #48ff23 solid 1px;
+}
+
+.a-list_exp {
+    margin-left: 182px;
+}
+
+.a-list_prj {
+    margin-left: 269px;
+}
+
+.a-list_awd {
+    margin-left: 269px;
+}
+
+/*Наши работы*/
+
+
+.ourwork h2 {
+    display: flex;
+    justify-content: start;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    border: #48ff23 solid 1px;
+    padding: 0;
+    margin: 65px auto 40px 100px;
+}
+
+.ourwork-pic {
+    display: grid;
+    grid-template-columns: 488px 204px 488px;
+    row-gap: 30px;
+    column-gap: 20px;
+    justify-content: start;
+    margin-left: 100px;
+}
+
+.ourwork-pic > div {
+    height: 451px;
+    background-image: url(Pictures/bedroom.jpg);
+    border: #48ff23 solid 1px;
+}
+
+.ourwork-pic-overlay {
+    display: grid;
+    align-content: top;
+    height: 451px;
+    background-color: rgba(100, 72, 69, 0.8);
+}
+
+.ourwork-pic div h3 {
+    display: grid;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    border: #330850 solid 1px;
+    margin: 86px 0 0 0;
+    width: 270px;
+    }
+
+.ourwork-pic div p {
+    display: grid;
+    align-self: bottom;
+    border: #330850 solid 1px;
+    margin: auto 35px 122px 35px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.kitchen-pic {
+    grid-column: span 2;
+    width: 692px;
+    border: #48ff23 solid 1px;
+}
+
+.livingroom-pic {
+    grid-column: span 2;
+    width: 692px;
+    border: #48ff23 solid 1px;
+}
+
+.bathroom-pic {
+    width: auto;
+    border: #48ff23 solid 1px;
+    margin: 0;
+}
+
+.button-see-more {
+    display: flex;
+}
+
+.button-see-more p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+    border: #48ff23 solid 1px;
+    margin: 40px 0 65px 553px;
+}
+
+.button-see-more button {
+    display: grid;
+    align-content: center;
+    height: 37px;
+    background-color: #EFE6E4;
+    border: none;
+    border: #48ff23 solid 1px;
+    margin: 40px 0 65px 0;
+}
+
+/*Команда*/
+
+.team-list {
+    background-color: #E2C4BA;
+    border: #48ff23 solid 1px;
+}
+
+.team h2 {
+    display: grid;
+    justify-content: center;
+    background-color: #E2C4BA;
+    border: #48ff23 solid 1px;
+    margin: 0;
+    padding: 50px 0 42px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
+
+.team ul {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    justify-content: center;
+    column-gap: 38px;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+.team li p{
+    border: #48ff23 solid 1px;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+}
+
+.team li img {
+    border: #48ff23 solid 1px;
+}
+
+.team li {
+    display: grid;
+    align-content: flex-start;
+    border: #ff0015d7 dashed 2px;
+}
+
+/*Как мы работаем*/
+
+.stages h2, .stages ol {
+    margin: 0;
+    border: #48ff23 solid 1px;
+    background-color: #E2C4BA;
+}
+
+.stages h2 {
+    display: grid;
+    justify-content: center;
+    padding: 35px 0 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
+
+.stages ol {
+    display: flex;
+
+}
