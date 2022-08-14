@@ -406,7 +406,7 @@ li span {
 
 .stages h2, .stages ol {
     margin: 0;
-    border: #48ff23 solid 1px;
+    border: #9518fc solid 2px;
     background-color: #E2C4BA;
 }
 
@@ -423,7 +423,129 @@ li span {
     color: #533738;
 }
 
+
 .stages ol {
+    margin: 0;
+    padding: 0 100px 0 100px;
     display: flex;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #533738;
+    counter-reset: section;
+}
+
+.stages li {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 285px;
+    justify-items: center;
+    border: #094b14 solid 1px;
+    margin-bottom: 80px;
+}
+
+.stages li::before {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    counter-increment: section;
+    content: counter(section)" ";
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #8D7370;
+    border: #2612db solid 1px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+/*Отзывы*/
+
+.review-block {
+    display: grid;
+    grid-template-columns: 81px 407px 408px 81px;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 65px ;
+}
+
+.reviews h2 {
+    margin: 0;
+    padding: 65px 0 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    border: #094b14 solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews blockquote {
+    margin: 0;
+    width: 407px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    border: #094b14 solid 1px;
+    order: 2;
+}
+
+.reviews cite {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #533738;
+}
+
+.review-img {
+    width: 408px;
+    margin-right: 9px;
+    order: 3;
+    display: grid;
+    row-gap: 17px;
 
 }
+
+.reviews input {
+    background-color: #CC8B86;
+    width: 72px;
+    height: 72px;
+    border-radius: 40px;
+}
+
+.arrow-rigth {
+    order: 4;
+    display: grid;
+    align-content: center;
+    justify-content: right;
+}
+
+.arrow-left {
+    order: 1;
+    display: grid;
+    align-content: center;
+}
+
+
+
