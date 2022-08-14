@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -105,21 +106,28 @@
             <section class="reviews">
                 <article>
                     <h2>Отзывы</h2>
-                    <blockquote>
-                        <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-                        </p>
-                        <p>Работа шла быстро, было очень приятно общаться и взаимодествовать
-                            с сотрудниками. Не ожидала, что это будет так легко!</p>
-                        <p>Буду советовать и своим друзьям к вам обращаться!»</p>
-                        <cite>Анна Беловская</cite>
-                    </blockquote>
-                    <img src="Pictures/clientslivingroom.jpg" alt="гостинная клиента">
-                    <img src="Pictures/clientskitchen.jpg" alt="обеденная зона клиента">
-                    <button><img src="#" alt="влево"></button>
-                    <button><img src="#" alt="вправо"></button>
+                    <div class="review-block">
+                        <blockquote>
+                            <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+                            </p>
+                            <p>Работа шла быстро, было очень приятно общаться и взаимодествовать
+                                с сотрудниками. Не ожидала, что это будет так легко!</p>
+                            <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+                            <cite>Анна Беловская</cite>
+                        </blockquote>
+                        <div class="review-img">
+                            <img src="Pictures/clientslivingroom.jpg" alt="гостинная клиента">
+                            <img src="Pictures/clientskitchen.jpg" alt="обеденная зона клиента">
+                        </div>
+                        <div class="arrow-left">
+                            <input type="image" name="left" src="Pictures/Arrow3.svg" alt="Влево">
+                        </div>
+                        <div class="arrow-rigth">
+                            <input type="image" name="right" src="Pictures/Arrow2.svg" alt="Вправо">
+                        </div>
+                    </div>
                 </article>
             </section>
-
             <section class="calltoaction">
                 <h2>Оставить заявку</h2>
                 <p>Оставьте свои контакты. Менеджер перезвонит
