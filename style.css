@@ -114,6 +114,7 @@ section {
     width: 309.14px;
     margin-top: 21px;
     text-align: center;
+    border: none;
     }
 
 .intro a {
@@ -258,8 +259,8 @@ li span {
     grid-template-columns: 488px 204px 488px;
     row-gap: 30px;
     column-gap: 20px;
-    justify-content: start;
     margin-left: 100px;
+    border: #2612db 2px solid;
 }
 
 .ourwork-pic > div {
@@ -313,12 +314,12 @@ li span {
 .livingroom-pic {
     grid-column: span 2;
     width: 692px;
-    border: #48ff23 solid 1px;
+    border: #4423ff solid 1px;
 }
 
 .bathroom-pic {
     width: auto;
-    border: #48ff23 solid 1px;
+    border: #a80101 dashed 2px;
     margin: 0;
 }
 
@@ -545,6 +546,113 @@ li span {
     order: 1;
     display: grid;
     align-content: center;
+}
+
+/*Call to Action*/
+
+.calltoaction {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #8D7370;
+    border: #45aeeb solid 2px;
+}
+
+.calltoaction-form {
+    margin-left: 181px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.calltoaction-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: #094b14 solid 2px;
+    margin: 50px 0 24px 0;
+}
+
+.calltoaction-form p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    border: #094b14 solid 2px;
+    margin-bottom: 44px;
+    padding: 0;
+}
+
+.calltoaction-form input {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+    background-color: #8D7370;
+    border: none;
+    border-bottom: white 1px solid;
+}
+
+.form_your-name {
+    margin-bottom: 35px;
+}
+
+.form_your-phone {
+    margin-bottom: 31px;
+}
+
+
+.calltoaction-form button {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #533738;
+    border: none;
+    height: 74px;
+    width: 309.14px;    
+    background-color: #CC8B86;
+}
+
+.calltoaction img  {
+    border: yellow 1px solid;
+    margin-right: 101px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #EFE6E4;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer a {
+    margin-right: 42px;
+}
+
+.footer-name {
+margin-left: auto;
 }
 
 
