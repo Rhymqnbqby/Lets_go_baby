@@ -18,26 +18,26 @@
                 <p>SCANDI</p>
                 <nav>
                     <ul class="menu-list">
-                        <li>О компании</li>
-                        <li>Портфолио</li>
-                        <li>Команда</li>
-                        <li>Как мы работаем</li>
-                        <li>Отзывы клиентов</li>
-                        <li>Оставить заявку</li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#how-to-work">Как мы работаем</a></li>
+                        <li><a href="#feedback">Отзывы клиентов</a></li>
+                        <li><a href="#leave-request">Оставить заявку</a></li>
                     </ul>
                 
                 </nav>
-                <a href="tel:+79818574624">+7(981)857-46-24</a>
+                <a class="phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
             </div>
             <section class="intro">
                 <h1>Поможем сделать вашу квартиру уютнее</h1>
                 <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-                <div><a href="#">Оставить заявку</a></div>
+                <div><a href="#leave-request">Оставить заявку</a></div>
             </section>
         </header>
 
         <main>
-            <section class="aboutus">
+            <section class="aboutus" id="about">
                 <h2>О нас</h2>
                 <img src="Pictures/glassesandvase.jpg" alt="Сервированный стол" class="aboutus_img">
                 <p class="aboutus_p1">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
@@ -52,7 +52,7 @@
                 </ul>
             </section>
 
-            <section class="ourwork">
+            <section class="ourwork" id="portfolio">
                 <h2>Наши работы</h2>
                 <div class="ourwork-pic">
                     <div>
@@ -71,7 +71,7 @@
                 </div>
             </section>
 
-            <section class="team">
+            <section class="team" id="team">
                 <h2>Команда</h2>
                 <ul class="team-list">
                     <li>
@@ -89,7 +89,7 @@
                 </ul>
             </section>
 
-            <section class="stages">
+            <section class="stages" id="how-to-work">
                 <h2>Как мы работаем</h2>
                 <ol>
                     <li>Знакомимся, выезжаем
@@ -103,7 +103,7 @@
                 </ol>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="feedback">
                 <article>
                     <h2>Отзывы</h2>
                     <div class="review-block">
@@ -120,21 +120,21 @@
                             <img src="Pictures/clientskitchen.jpg" alt="обеденная зона клиента">
                         </div>
                         <div class="arrow-left">
-                            <input type="image" name="left" src="Pictures/Arrow3.svg" alt="Влево">
+                            <input type="button" name="left" alt="Влево">
                         </div>
                         <div class="arrow-rigth">
-                            <input type="image" name="right" src="Pictures/Arrow2.svg" alt="Вправо">
+                            <input type="button" name="right" alt="Вправо">
                         </div>
                     </div>
                 </article>
             </section>
-            <section class="calltoaction">
+            <section class="calltoaction" id="leave-request">
                 <div class="calltoaction-form">
                     <h2>Оставить заявку</h2>
                     <p>Оставьте свои контакты. Менеджер перезвонит
                     в удобное вам время и ответит на все вопросы.</p>
-                    <input type="text" value="Ваше имя" class="form_your-name">
-                    <input type="text" value="Введите телефон" class="form_your-phone">
+                    <input type="text" value="Ваше имя" class="form_your-name" required>
+                    <input type="text" value="Введите телефон" class="form_your-phone" required>
                     <button>Оставить заявку</button>
                 </div>
                 <img src="Pictures/map.jpg" alt="Наш адрес: Большая Конюшенная улица 19">
