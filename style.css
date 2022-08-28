@@ -1,8 +1,11 @@
 /* предустановки*/
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0;
-    border: 2px #9138e4 solid;
     position: relative;
 }
 
@@ -28,19 +31,6 @@ footer {
     margin-right: auto;
 }
 
-div {
-    border: 2px #094b14 solid; 
-}
-
-nav {
-    border: 2px #2612db solid;
-}
-
-section {
-    border: 2px #e43e38 solid;
-}
-
-
 /* Дальше селекторы по классам */
 
 /* Менюха */
@@ -49,26 +39,29 @@ section {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 32px;
-    border: #ac1998 solid 2px;
     padding-top: 36px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .menu a {
-    border: #ac1998 solid 2px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #533738;
 }
 
 .menu p {
-    border: #45aeeb solid 2px;
     margin: 0;
 }
 
 .menu-list {
-    margin: 0;
+    margin: 0 34.6px 0 89.13px;
     padding: 0;
     display: flex;
-    gap: 32px;
+    gap: 26.4px;
     justify-content: start;
     list-style-type: none;
     }
@@ -76,7 +69,6 @@ section {
 .logo {
     width: 25.34px;
     height: 25px;
-    border: #ffcd27 solid 2px;
     margin-left: 98.32px;
 }
 
@@ -123,6 +115,7 @@ section {
     line-height: 24px;
     color: #533738;
     align-self: center;
+    text-decoration: none;
 }
 
 /*Секция о нас*/
@@ -140,7 +133,6 @@ section {
     font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
-    border: #2612db solid 1px;
 }
 
 .aboutus img {
@@ -161,7 +153,6 @@ section {
     font-size: 18px;
     line-height: 30px;
     color: #533738;
-    border: #2612db solid 1px;
 }
 
 .aboutus .aboutus_p2 {
@@ -174,7 +165,6 @@ section {
     font-size: 18px;
     line-height: 30px;
     color: #533738;
-    border: #2612db solid 1px;
     padding-bottom: 156px;
 }
 
@@ -204,7 +194,6 @@ section {
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
-    border: #2612db solid 1px;
 }
 
 li span {
@@ -216,13 +205,9 @@ li span {
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-    border: #094b14 solid 1px;
     margin-bottom: 8px;
 }
 
-.advantage-list li {
-    border: #48ff23 solid 1px;
-}
 
 .a-list_exp {
     margin-left: 182px;
@@ -249,24 +234,21 @@ li span {
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
-    border: #48ff23 solid 1px;
     padding: 0;
     margin: 65px auto 40px 100px;
 }
 
 .ourwork-pic {
     display: grid;
-    grid-template-columns: 488px 204px 488px;
+    grid-template-columns: 488px 184px 488px;
     row-gap: 30px;
     column-gap: 20px;
     margin-left: 100px;
-    border: #2612db 2px solid;
 }
 
 .ourwork-pic > div {
     height: 451px;
     background-image: url(Pictures/bedroom.jpg);
-    border: #48ff23 solid 1px;
 }
 
 .ourwork-pic-overlay {
@@ -286,7 +268,6 @@ li span {
     line-height: 37px;
     text-align: center;
     color: #FFFFFF;
-    border: #330850 solid 1px;
     margin: 86px 0 0 0;
     width: 270px;
     }
@@ -294,7 +275,6 @@ li span {
 .ourwork-pic div p {
     display: grid;
     align-self: bottom;
-    border: #330850 solid 1px;
     margin: auto 35px 122px 35px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -307,20 +287,16 @@ li span {
 
 .kitchen-pic {
     grid-column: span 2;
-    width: 692px;
-    border: #48ff23 solid 1px;
 }
 
 .livingroom-pic {
     grid-column: span 2;
     width: 692px;
-    border: #4423ff solid 1px;
 }
 
 .bathroom-pic {
-    width: auto;
-    border: #a80101 dashed 2px;
     margin: 0;
+    padding: 0;
 }
 
 .button-see-more {
@@ -334,7 +310,6 @@ li span {
     font-size: 30px;
     line-height: 37px;
     color: #533738;
-    border: #48ff23 solid 1px;
     margin: 40px 0 65px 553px;
 }
 
@@ -344,7 +319,6 @@ li span {
     height: 37px;
     background-color: #EFE6E4;
     border: none;
-    border: #48ff23 solid 1px;
     margin: 40px 0 65px 0;
 }
 
@@ -352,14 +326,12 @@ li span {
 
 .team-list {
     background-color: #E2C4BA;
-    border: #48ff23 solid 1px;
 }
 
 .team h2 {
     display: grid;
     justify-content: center;
     background-color: #E2C4BA;
-    border: #48ff23 solid 1px;
     margin: 0;
     padding: 50px 0 42px 0;
     font-family: 'Montserrat', sans-serif;
@@ -387,27 +359,23 @@ li span {
 }
 
 .team li p{
-    border: #48ff23 solid 1px;
     margin: 10px 0 0 0;
     padding: 0;
 
 }
 
 .team li img {
-    border: #48ff23 solid 1px;
 }
 
 .team li {
     display: grid;
     align-content: flex-start;
-    border: #ff0015d7 dashed 2px;
 }
 
 /*Как мы работаем*/
 
 .stages h2, .stages ol {
     margin: 0;
-    border: #9518fc solid 2px;
     background-color: #E2C4BA;
 }
 
@@ -447,7 +415,7 @@ li span {
     display: grid;
     grid-template-columns: 285px;
     justify-items: center;
-    border: #094b14 solid 1px;
+    align-self: start;
     margin-bottom: 80px;
 }
 
@@ -466,7 +434,6 @@ li span {
     line-height: 30px;
     color: #FFFFFF;
     background-color: #8D7370;
-    border: #2612db solid 1px;
     border-radius: 40px;
     margin-bottom: 20px;
 }
@@ -491,12 +458,12 @@ li span {
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
-    border: #094b14 solid 1px;
     display: flex;
     justify-content: center;
 }
 
 .reviews blockquote {
+    align-self: center;
     margin: 0;
     width: 407px;
     font-family: 'Montserrat', sans-serif;
@@ -505,7 +472,6 @@ li span {
     font-size: 18px;
     line-height: 30px;
     color: #533738;
-    border: #094b14 solid 1px;
     order: 2;
 }
 
@@ -540,7 +506,7 @@ li span {
     display: grid;
     align-content: center;
     justify-content: right;
-}
+    }
 
 .arrow-left {
     order: 1;
@@ -548,13 +514,28 @@ li span {
     align-content: center;
 }
 
+.arrow-left input {
+    background-image: url("Pictures/Arrow3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.arrow-rigth input {
+    background-image: url("Pictures/Arrow2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+
+
 /*Call to Action*/
 
 .calltoaction {
     display: flex;
     justify-content: flex-end;
     background-color: #8D7370;
-    border: #45aeeb solid 2px;
 }
 
 .calltoaction-form {
@@ -572,7 +553,6 @@ li span {
     line-height: 50px;
     text-transform: uppercase;
     color: #FFFFFF;
-    border: #094b14 solid 2px;
     margin: 50px 0 24px 0;
 }
 
@@ -584,7 +564,6 @@ li span {
     line-height: 30px;
     color: #FFFFFF;
     opacity: 0.6;
-    border: #094b14 solid 2px;
     margin-bottom: 44px;
     padding: 0;
 }
@@ -624,7 +603,6 @@ li span {
 }
 
 .calltoaction img  {
-    border: yellow 1px solid;
     margin-right: 101px;
 }
 
@@ -649,6 +627,13 @@ footer {
 
 .footer a {
     margin-right: 42px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
 }
 
 .footer-name {
