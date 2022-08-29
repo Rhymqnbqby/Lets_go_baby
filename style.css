@@ -255,8 +255,17 @@ li span {
     display: grid;
     align-content: top;
     height: 451px;
-    background-color: rgba(100, 72, 69, 0.8);
+    opacity: 0;
 }
+
+.ourwork-pic-overlay:hover {
+    display: grid;
+    align-content: top;
+    height: 451px;
+    background-color: rgba(100, 72, 69, 0.8);
+    opacity: 1;
+}
+
 
 .ourwork-pic div h3 {
     display: grid;
