@@ -373,9 +373,6 @@ li span {
 
 }
 
-.team li img {
-}
-
 .team li {
     display: grid;
     align-content: flex-start;
